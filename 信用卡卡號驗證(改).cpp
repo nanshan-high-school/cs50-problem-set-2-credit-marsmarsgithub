@@ -13,8 +13,8 @@ int main() {
   for (int X=0;X<8;X++){
     int number=card2;
     card2=card2/100;
-  if (number>9){
-    number/10+number%10;
+  if (number>4){
+    number*2/10+number*2%10;
   }
   else {
   number=number*2;
