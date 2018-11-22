@@ -14,7 +14,7 @@ int main() {
     int number=card2;
     card2=card2/100;
   if (number>4){
-    number*2/10+number*2%10;
+    number = number * 2 / 10 + number * 2 % 10;
   }
   else {
   number=number*2;
@@ -30,11 +30,10 @@ int main() {
   else {
     checknumber = 10 - total % 10;
   }
-  if ( total % 10 == 0 ) {
-  if ( cardnumber == 4 ) cout << "這是Visa card。";
+  if ( total+checknumber % 10 == 0 ) {
+    if ( cardnumber == 4 ) cout << "這是Visa card。";
     else if ( cardnumber == 5 ) cout << "這是Master card。";
     else cout << "這是其他信用卡。";
   }
   else cout << "這是其他信用卡。\n";
 }
-
